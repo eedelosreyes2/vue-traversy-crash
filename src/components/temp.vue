@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-        <router-link to="/about">About</router-link>
         <AddTodo @add-todo="addTodo" />
         <Todos :todos="todos" @del-todo="deleteTodo" />
     </div>

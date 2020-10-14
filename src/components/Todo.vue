@@ -29,7 +29,6 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* padding: 0 30px; */
 }
 .completed {
     text-decoration: line-through;

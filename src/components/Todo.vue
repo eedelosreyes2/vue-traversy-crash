@@ -19,14 +19,17 @@ export default {
 </script>
 
 <style scoped>
+button {
+    height: 20px;
+}
 #todo {
-    /* text-align: left; */
+    text-align: left;
 }
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 .completed {
     text-decoration: line-through;

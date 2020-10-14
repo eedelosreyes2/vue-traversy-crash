@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { v4 as uuidv4 } from "uuid";
+// import { v4 as uuidv4 } from "uuid";
 
 export default {
     name: "AddTodo",
@@ -24,15 +24,16 @@ export default {
             e.preventDefault();
 
             const newTodo = {
-                id: uuidv4(),
                 title: this.title,
                 completed: false,
             };
 
-            this.title = "";
-
             // Send up to parent
-            this.$emit("add-todo", newTodo);
+            if (this.title.trim().length > 0) {
+                this.$emit("add-todo", newTodo);
+            }
+
+            this.title = "";
         },
     },
 };
